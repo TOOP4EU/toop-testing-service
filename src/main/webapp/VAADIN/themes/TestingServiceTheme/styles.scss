@@ -1,0 +1,35 @@
+@import "TestingServiceTheme.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in DCUITheme.scss
+
+.TestingServiceTheme {
+  @include addons;
+  @include TestingServiceTheme;
+
+  /* unvisited link */
+  a:link {
+    color: #2563b2;
+  }
+
+  /* visited link */
+  a:visited {
+    color: #2563b2;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #2563b2;
+  }
+
+  /* selected link */
+  a:active {
+    color: #2563b2;
+  }
+
+  &.v-app {
+    background-color: #eee;
+  }
+
+}
